@@ -17,11 +17,11 @@
 <meta property="og:description" content="FidoNet-Style Networks (FTN) FidoNet proper and other FidoNet-Style networks are supported by ENiGMA½. A bit of configuration and you’ll be up and running in no time!" />
 <meta property="og:site_name" content="ENiGMA½ BBS Software" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-03-29T21:15:06+00:00" />
+<meta property="article:published_time" content="2023-02-12T21:09:25+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="FidoNet-Style Networks (FTN)" />
 <script type="application/ld+json">
-{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/enigma-bbs/assets/images/enigma-logo.png"}},"description":"FidoNet-Style Networks (FTN) FidoNet proper and other FidoNet-Style networks are supported by ENiGMA½. A bit of configuration and you’ll be up and running in no time!","url":"/enigma-bbs/messageareas/ftn.html","@type":"BlogPosting","headline":"FidoNet-Style Networks (FTN)","dateModified":"2022-03-29T21:15:06+00:00","datePublished":"2022-03-29T21:15:06+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/enigma-bbs/messageareas/ftn.html"},"@context":"https://schema.org"}</script>
+{"description":"FidoNet-Style Networks (FTN) FidoNet proper and other FidoNet-Style networks are supported by ENiGMA½. A bit of configuration and you’ll be up and running in no time!","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/enigma-bbs/assets/images/enigma-logo.png"}},"url":"/enigma-bbs/messageareas/ftn.html","@type":"BlogPosting","headline":"FidoNet-Style Networks (FTN)","dateModified":"2023-02-12T21:09:25+00:00","datePublished":"2023-02-12T21:09:25+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/enigma-bbs/messageareas/ftn.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -1278,31 +1278,6 @@
 
 
     
-    <li><a href="/enigma-bbs/art/views/predefined_label_view.html">Predefined Label View</a></li>
-    
-
-
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-    
-
-
-    
     <li><a href="/enigma-bbs/art/views/spinner_menu_view.html">Spinner Menu View</a></li>
     
 
@@ -2181,6 +2156,45 @@
   
 
   
+    
+      </ul>
+    
+  <li>Modding</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/wfc.html">Waiting For Caller (WFC)</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+      </ul>
+    
+  <li>Administration</li>
+  <ul>
+
+  
 
     
 
@@ -2289,7 +2303,9 @@
 <code class="language-plaintext highlighter-rouge">scannerTossers.ftn_bso</code>: General configuration for the scanner/tosser (import/export) process. This is also where we configure per-node (uplink) settings.</li>
 </ol>
 
-<p><img class="emoji" title=":information_source:" alt=":information_source:" src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png" height="20" width="20"> ENiGMA½’s <code class="language-plaintext highlighter-rouge">ftn_bso</code> module is <strong>not a mailer</strong> and makes <strong>no attempts</strong> to perform packet transport! An external utility such as Binkd is required for this task.</p>
+<blockquote>
+  <p><img class="emoji" title=":information_source:" alt=":information_source:" src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png" height="20" width="20"> ENiGMA½’s <code class="language-plaintext highlighter-rouge">ftn_bso</code> module is <strong>not a mailer</strong> and makes <strong>no attempts</strong> to perform packet transport! An external utility such as Binkd is required for this task.</p>
+</blockquote>
 
 <h4 id="networks">Networks</h4>
 <p>The <code class="language-plaintext highlighter-rouge">networks</code> block is a per-network configuration where each entry’s ID (or “key”) may be referenced elsewhere in <code class="language-plaintext highlighter-rouge">config.hjson</code>. For example, consider two networks: ArakNet (<code class="language-plaintext highlighter-rouge">araknet</code>) and fsxNet (<code class="language-plaintext highlighter-rouge">fsxnet</code>):</p>
@@ -2363,7 +2379,9 @@
 }
 </code></pre>
 
-<p><img class="emoji" title=":bulb:" alt=":bulb:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png" height="20" width="20"> You can import <code class="language-plaintext highlighter-rouge">AREAS.BBS</code> or FTN style <code class="language-plaintext highlighter-rouge">.NA</code> files using <a href="/enigma-bbs/admin/oputil.html">oputil</a>!</p>
+<blockquote>
+  <p><img class="emoji" title=":bulb:" alt=":bulb:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png" height="20" width="20"> You can import <code class="language-plaintext highlighter-rouge">AREAS.BBS</code> or FTN style <code class="language-plaintext highlighter-rouge">.NA</code> files using <a href="/enigma-bbs/admin/oputil.html">oputil</a>!</p>
+</blockquote>
 
 <h4 id="a-more-complete-example">A More Complete Example</h4>
 <p>Below is a more complete <em>example</em> illustrating some of the concepts above:</p>
@@ -2393,7 +2411,9 @@
 }
 </code></pre>
 
-<p><img class="emoji" title=":information_source:" alt=":information_source:" src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png" height="20" width="20"> Remember for a complete FTN experience, you’ll probably also want to configure <a href="/enigma-bbs/messageareas/bso-import-export.html">FTN/BSO scanner/tosser</a> settings.</p>
+<blockquote>
+  <p><img class="emoji" title=":information_source:" alt=":information_source:" src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png" height="20" width="20"> Remember for a complete FTN experience, you’ll probably also want to configure <a href="/enigma-bbs/messageareas/bso-import-export.html">FTN/BSO scanner/tosser</a> settings.</p>
+</blockquote>
 
 <h4 id="ftnbso-scanner-tosser">FTN/BSO Scanner Tosser</h4>
 <p>Please see the <a href="/enigma-bbs/messageareas/bso-import-export.html">FTN/BSO Scanner/Tosser</a> documentation for information on this area.</p>
